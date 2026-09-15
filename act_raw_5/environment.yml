@@ -1,0 +1,40 @@
+name: act_lxh
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - scipy
+  - ffmpeg
+  - pip
+  - pip:
+      # Match the DynaMoE environment's PyTorch CUDA wheel source.
+      # On CPU-only machines this environment can still be created, but CUDA
+      # training requires a working NVIDIA driver/CUDA runtime.
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+
+      # Core ACT training / data loading
+      - torch==2.11.0
+      - torchvision==0.26.0
+      - numpy
+      - h5py
+      - einops
+      - opencv-python
+      - pandas
+      - scipy
+      - tqdm
+      - matplotlib
+      - pillow
+      - requests
+      - IPython
+
+      # Config/logging utilities used by training and conversion scripts
+      - PyYAML
+      - wandb
+      - psutil
+
+      # Robot / hardware-side utilities used by rollout and replay scripts.
+      # Startouch is not a pip package in this repo; set STARTOUCH_SDK_PATH
+      # to its interface_py directory when running Startouch rollout scripts.
+      - xarm-python-sdk
+      - python-can>=4.3.1
+      - rospkg

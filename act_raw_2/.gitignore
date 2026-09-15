@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.torch/
+*.tar.gz
+
+logs/
+wandb/
+*.log
+
+checkpoints/*
+!checkpoints/.gitkeep
+
+cam_startouch_single.png
+rollout_startouch_debug.json
+train_val_*_seed_*.png

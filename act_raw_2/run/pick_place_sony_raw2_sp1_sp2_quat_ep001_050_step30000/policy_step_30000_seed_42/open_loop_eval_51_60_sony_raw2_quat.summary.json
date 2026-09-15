@@ -1,0 +1,109 @@
+{
+  "checkpoint": "/share/project/dy/dy1/code/act_raw_2/checkpoints/pick_place_sony_raw2_sp1_sp2_quat_ep001_050_step30000/policy_step_30000_seed_42.ckpt",
+  "dataset_stats": "/share/project/dy/dy1/code/act_raw_2/checkpoints/pick_place_sony_raw2_sp1_sp2_quat_ep001_050_step30000/dataset_stats.pkl",
+  "data_dir": "/share/project/dy/dy1/data/sony_rawdata/pick_place_sony/pick_place_sony_hdf5_raw_2",
+  "quaternion_order": "xyzw",
+  "image_encoding": "sony_bin_uint16",
+  "raw_black_level": 0,
+  "raw_white_level": 4095,
+  "raw_gamma": 2.2,
+  "quaternion_metric_note": "Prediction and target are unit-normalized; prediction sign is aligned because q and -q represent the same rotation. Rotation angle uses 2*acos(abs(dot(q_pred,q_target))).",
+  "episodes": [
+    "episode_000051.hdf5",
+    "episode_000052.hdf5",
+    "episode_000053.hdf5",
+    "episode_000054.hdf5",
+    "episode_000055.hdf5",
+    "episode_000056.hdf5",
+    "episode_000057.hdf5",
+    "episode_000058.hdf5",
+    "episode_000059.hdf5",
+    "episode_000060.hdf5"
+  ],
+  "num_episodes": 10,
+  "num_queries": 80,
+  "first_action": {
+    "count": 3000,
+    "mae": {
+      "x": 0.00747820790608724,
+      "y": 0.0069329803238312405,
+      "z": 0.007836502651063105,
+      "qx": 0.01942671937333562,
+      "qy": 0.01629189415034571,
+      "qz": 0.023462033935689387,
+      "qw": 0.01858003085195859,
+      "gripper": 6.2592752717336015
+    },
+    "rmse": {
+      "x": 0.011281774813372036,
+      "y": 0.010871271188059835,
+      "z": 0.01215774077584904,
+      "qx": 0.03565084169973696,
+      "qy": 0.028895998750659083,
+      "qz": 0.04258401908883807,
+      "qw": 0.02912379438277401,
+      "gripper": 14.094793041323266
+    },
+    "max_abs_error": {
+      "x": 0.05112743377685547,
+      "y": 0.03866682946681976,
+      "z": 0.04704210162162781,
+      "qx": 1.0942871851249758,
+      "qy": 0.5674722400426973,
+      "qz": 1.0325179761750405,
+      "qw": 0.2966928804462796,
+      "gripper": 94.37749862670898
+    },
+    "xyz_mae": 0.007415896960327195,
+    "quaternion_component_mae": 0.019440169577832327,
+    "gripper_mae": 6.2592752717336015,
+    "rotation_angle_mae_rad": 0.08924417499432305,
+    "rotation_angle_rmse_rad": 0.14020343722037973,
+    "rotation_angle_max_rad": 2.619698910776365,
+    "rotation_angle_mae_deg": 5.113314573301668,
+    "rotation_angle_rmse_deg": 8.033065225955156,
+    "rotation_angle_max_deg": 150.09769118250455
+  },
+  "full_chunk": {
+    "count": 208400,
+    "mae": {
+      "x": 0.026930541396427064,
+      "y": 0.014830159706898362,
+      "z": 0.02293650495217337,
+      "qx": 0.040538499278868996,
+      "qy": 0.024219114546820797,
+      "qz": 0.05176699226722488,
+      "qw": 0.025909488133299206,
+      "gripper": 23.71865409076786
+    },
+    "rmse": {
+      "x": 0.03963191225214067,
+      "y": 0.02244810504185208,
+      "z": 0.03506499688478187,
+      "qx": 0.07475928082230349,
+      "qy": 0.04144440948213819,
+      "qz": 0.08947203695947654,
+      "qw": 0.043472011184134296,
+      "gripper": 51.58392444383842
+    },
+    "max_abs_error": {
+      "x": 0.25548255443573,
+      "y": 0.14653383195400238,
+      "z": 0.2106774915009737,
+      "qx": 1.3833470897246096,
+      "qy": 1.0501848786382546,
+      "qz": 1.38183148798311,
+      "qw": 0.9069496711964913,
+      "gripper": 247.67112731933594
+    },
+    "xyz_mae": 0.021565735351832937,
+    "quaternion_component_mae": 0.035608523556553466,
+    "gripper_mae": 23.71865409076786,
+    "rotation_angle_mae_rad": 0.16648396015810712,
+    "rotation_angle_rmse_rad": 0.2675420900792709,
+    "rotation_angle_max_rad": 3.1408070036497087,
+    "rotation_angle_mae_deg": 9.538828273683688,
+    "rotation_angle_rmse_deg": 15.329032603651113,
+    "rotation_angle_max_deg": 179.95498557425844
+  }
+}
